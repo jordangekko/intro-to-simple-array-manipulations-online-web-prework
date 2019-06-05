@@ -11,14 +11,14 @@ describe .push do
     end
 end
 
-describe "#using_unshift" do 
+describe .unshift do 
   before(:each) do 
     neighborhoods_in_northwest_brooklyn = ["Brooklyn Yards", "Cadman Plaza", "Clinton Hill", "Downtown Brooklyn", "DUMBO"]
     @new_neighborhood = "Brooklyn Heights"
     @updated_array = using_unshift(neighborhoods_in_northwest_brooklyn, @new_neighborhood)
   end
   
-  it "takes in two arguments, an array and a string and adds that string to the front of the array using the unshift method" do
+  it .first do
     expect(@updated_array.first).to eq(@new_neighborhood)
   end
 

@@ -27,12 +27,12 @@ describe .unshift do
   end
 end
 
-describe "#using_pop" do
+describe .pop do
   before(:each) do 
     @great_hits_of_the_nineties = ["Baby One More Time", "Smells Like Teen Spirit", "Missing", "Walking On The Sun", "Hard Knock Life", "Losing My Religion"]
     @deleted_string = using_pop(@great_hits_of_the_nineties)
   end
-  it "takes in argument of an array and uses the pop method to remove the last element from the array and return that element" do 
+  it  .last  do 
     expect(@deleted_string).to eq("Losing My Religion")
   end
 
